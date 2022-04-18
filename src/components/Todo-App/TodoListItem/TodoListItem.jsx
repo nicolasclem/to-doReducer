@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TodoListItem = ({todo,i,handleDelete,handleToggle}) => {
+const TodoListItem = ({todo,i,handleDelete,handleToggle,}) => {
   return (
     <li className='list-group-item d-flex justify-content-center '>
         <p className={`${todo.done && 'complete'}`} onClick={()=>handleToggle(todo.id)}>{i+1}.{todo.desc}</p>
